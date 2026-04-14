@@ -27,8 +27,16 @@ public class App {
         }
         System.out.println("");
         //Write your code below here
-
-
-
+        ArrayList<Integer> great = new ArrayList<>();
+         System.out.println("Give a number: ");
+         int num=Integer.valueOf(scanner.nextLine());
+         for(Integer yes:values){
+            if(yes>num){
+                great.add(yes);
+            }
+         }
+         for(Integer no: great){
+            System.out.println(no);
+         }
     }
 }
